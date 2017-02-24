@@ -2,6 +2,7 @@
     var canvas = document.getElementById('canvas');
     var context = canvas.getContext('2d');
     var mouseDown = false;
+    var pencilThickness = 1;
 
     context.strokeStyle = '#000';
 
@@ -21,7 +22,6 @@
 
             context.lineTo(x, y);
             context.stroke();
-
         }
     });
 
@@ -42,6 +42,15 @@
 
     $('.color-container').click(function(){
         context.strokeStyle = this.id;
+    });
+
+    $(window).bind('mousewheel', function(e) {
+       if(e.originalEvent.wheelDelta >= 0){
+           pencilThickness++;
+       }else{
+           pencilThickness--;
+       }
+        context.lineWidth = pencilThickness;
     });
 
 
