@@ -53,6 +53,9 @@
         context.lineWidth = pencilThickness;
     });
 
-
+    //Empty the canvas
+    $('.glyphicon-trash').click(function(){
+       context.clearRect(0, 0, canvas.width, canvas.height);
+    });
 
 })(jQuery);

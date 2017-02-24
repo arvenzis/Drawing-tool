@@ -8,16 +8,16 @@
 .vertical-center {
     min-height: 100%;
     min-height: 100vh;
-
     display: flex;
     align-items: center;
 }
 
-.color-pallet{
+.options-container{
     width: 200px;
     height: 100px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    margin: 10px;
 }
 
 .color-container{
@@ -26,7 +26,13 @@
     float: left;
 }
 
-.color-container:hover{
+.container-hover:hover{
     cursor: pointer;
     background-color: #ddd;
 }​
+
+.container-hover{
+    width: 48px;
+    height: 48px;
+    float: left;
+}
