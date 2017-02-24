@@ -15,8 +15,8 @@
     //Detect that the mouse is moving and draw the line while the mouse is still down
     $(canvas).mousemove(function(e){
         if(mouseDown){
-            var x = e.offsetX * 2;
-            var y = e.offsetY * 2;
+            var x = e.offsetX / 1.325325;
+            var y = e.offsetY / 2.65;
 
 
             context.lineTo(x, y);
