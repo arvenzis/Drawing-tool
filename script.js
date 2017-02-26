@@ -55,7 +55,11 @@
 
     //Empty the canvas
     $('.glyphicon-trash').click(function(){
-       context.clearRect(0, 0, canvas.width, canvas.height);
+        var warning = confirm("Are you sure you want to do this? This will permanently delete your drawing");
+
+        if(warning){
+            context.clearRect(0, 0, canvas.width, canvas.height);
+        }
     });
 
 })(jQuery);

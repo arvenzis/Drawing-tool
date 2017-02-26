@@ -26,13 +26,17 @@
     float: left;
 }
 
-.container-hover:hover{
-    cursor: pointer;
-    background-color: #ddd;
-}​
+.glyphicon{
+    font-size: 30px;
+}
 
 .container-hover{
     width: 48px;
     height: 48px;
     float: left;
 }
+
+.container-hover:hover{
+    cursor: pointer;
+    background-color: #ddd;
+}​
